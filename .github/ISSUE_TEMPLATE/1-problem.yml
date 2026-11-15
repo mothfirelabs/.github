@@ -1,0 +1,21 @@
+name: Report a problem
+description: Something is wrong, broken, or unclear — in the code, the docs, or the website.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Found a security problem? Please don't report it here. Follow our
+        [security policy](https://github.com/mothfirelabs/.github/blob/main/SECURITY.md) instead.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong?
+      description: What happened, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: How can we see it?
+      description: Steps to reproduce, a link to the page or file, versions — whatever would show us the problem too.
