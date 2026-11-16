@@ -1,6 +1,7 @@
 name: Suggest an idea
 description: A feature, a research question, or related work we should know about.
-labels: [enhancement]
+type: Feature
+projects: [mothfirelabs/1]
 body:
   - type: textarea
     id: idea
