@@ -1,0 +1,31 @@
+name: Task
+description: For maintainers — a specific piece of work, such as a milestone in the design.
+type: Task
+projects: [mothfirelabs/1]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What's true when this is done, and why it matters. Link the part of the design it delivers.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What's in, and what's explicitly out.
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: How anyone can check it's done — tests, benchmarks, docs. One item per line.
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Pointers, constraints, and open questions for whoever picks this up — a person or Copilot cloud agent.

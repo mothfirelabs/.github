@@ -1,0 +1,30 @@
+name: Decision
+description: For maintainers — a choice to make, then record in docs/decisions/.
+type: Decision
+projects: [mothfirelabs/1]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: What we need to decide
+      description: The choice, and what constrains it.
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options
+      description: Each option, with what it costs and what it gets us.
+    validations:
+      required: true
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: Recommendation
+      description: Which option, and why. Leave it empty if it's still open.
+  - type: markdown
+    attributes:
+      value: >-
+        Once it's decided, record it in `docs/decisions/NNNN-short-title.md`, as the
+        [playbook](https://github.com/mothfirelabs/.github/blob/main/PLAYBOOK.md#decisions) describes, and close this
+        issue with a link to the record.

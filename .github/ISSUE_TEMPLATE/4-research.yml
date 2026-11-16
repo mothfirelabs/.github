@@ -1,0 +1,29 @@
+name: Research question
+description: For maintainers — an open question, or an experiment to run.
+type: Research
+projects: [mothfirelabs/1]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What do we want to know?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters
+      description: What we'd do differently, depending on the answer.
+  - type: textarea
+    id: method
+    attributes:
+      label: How we'll find out
+      description: Reading, an experiment, or a benchmark run — and roughly what it will cost.
+  - type: textarea
+    id: answer
+    attributes:
+      label: What counts as an answer
+      description: >-
+        The result that would settle it, and where we'll record it: docs/landscape.md, docs/benchmarks.md, or a
+        decision.
