@@ -261,10 +261,30 @@ A project's name, tagline, and stage appear in up to five places. When one chang
 5. The [Hugging Face organization card](https://huggingface.co/spaces/mothfirelabs/README), once the project publishes
    there.
 
+## Joining
+
+Each project has a team — [Loops](https://github.com/orgs/mothfirelabs/teams/loops),
+[Inference](https://github.com/orgs/mothfirelabs/teams/inference), and
+[Taste](https://github.com/orgs/mothfirelabs/teams/taste) — that can write to its repository. Every member of the
+organization can read the other repositories and edit the [board](#planning), and needs two-factor authentication.
+
+1. An owner invites you to the organization, into your project's team.
+2. Clone the repository, and read its `AGENTS.md`: how to set it up and check it, and the rules. `CHARTER.md` says what
+   the project is for, and `docs/design.md` how its first release is built.
+3. Take the tracking issue of the earliest open milestone after `M0` — or the issue you're given — and assign it to
+   yourself, or to Copilot cloud agent.
+4. Work on a branch, and open a pull request that closes the issue (see [code](#code)). Several people or agents
+   working on one machine each use their own clone or `git worktree`: switching branches in a shared checkout carries
+   the others' uncommitted work along.
+
+Milestones run in order, but `M0 — Foundation`'s open items, such as ratifying the charter, are for maintainers, and
+don't hold up `M1`.
+
 ## Starting a project
 
 1. Draft a charter, following the structure of an existing one.
 2. Create `mothfirelabs/mothfire-<name>`, private, with the files above, and apply the settings.
+   Create its team, with write access to the repository.
 3. Create `M0 — Foundation` with its issues: ratify the charter, write the design and the benchmark plan, choose a
    toolchain, and define the first experiment.
 4. Add its page to the website, with `public: false` until it's released.
