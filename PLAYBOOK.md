@@ -35,6 +35,7 @@ If we stop working on a project, we say so in its README and on its page, and ar
 | `ROADMAP.md` | What we're working on now, next, and later. No dates until we can keep them. |
 | `CHANGELOG.md` | User-facing changes in [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format, newest first, under `Unreleased` until released. |
 | `AGENTS.md` | Context and ground rules for AI coding agents such as GitHub Copilot. Update it when the toolchain or conventions change. |
+| `docs/design.md` | How the next release will work — components, formats, and milestones — written before it's built, and changed through pull requests like code. |
 | `docs/landscape.md` | Related work: what exists, what we learn from it, and where the project differs. |
 | `docs/decisions/` | One short record per [decision](#decisions). |
 
@@ -50,7 +51,7 @@ Every README starts the same way, with the tagline copied from the project's web
 
 **<Tagline.>**
 
-**Stage:** <stage> · [Website](https://mothfirelabs.github.io/projects/<name>/) · [Charter](CHARTER.md) · [Roadmap](ROADMAP.md) · [Blog](https://mothfirelabs.github.io/blog/)
+**Stage:** <stage> · [Website](https://mothfirelabs.github.io/projects/<name>/) · [Charter](CHARTER.md) · [Design](docs/design.md) · [Roadmap](ROADMAP.md) · [Blog](https://mothfirelabs.github.io/blog/)
 ```
 
 ## Repository settings
@@ -70,8 +71,8 @@ Every README starts the same way, with the tagline copied from the project's web
   - `decision`: a choice to make, then record (see [Decisions](#decisions)).
 - **Milestones** are named `M<n> — <Outcome>`, starting with `M0 — Foundation`, and describe an outcome rather than a
   list of tasks. They get a due date only when we mean to keep it.
-- **Every project starts with `M0 — Foundation`:** ratify the charter, choose a toolchain, and define the first
-  experiment.
+- **Every project starts with `M0 — Foundation`:** ratify the charter, write the design for the first release, choose
+  a toolchain, and define the first experiment.
 
 ## Decisions
 
